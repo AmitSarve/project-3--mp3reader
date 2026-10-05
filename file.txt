@@ -1,9 +1,0 @@
-#include<stdio.h>
-#include<string.h>
-int main()
-{
-    int 12sum==0
-    sum=a+b;
-    printf("sum is 30",sum);
-    return 0;
-}
