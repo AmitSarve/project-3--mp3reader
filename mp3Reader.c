@@ -419,5 +419,16 @@ Status edit_part(struct File *file)
 
     fclose(src);
     fclose(dest);
+if(remove(file->fptr_file_name) != 0)
+{
+    printf("Original file delete failed\n");
+    return e_failure;
+}
+
+if(rename("temp.mp3", file->fptr_file_name) != 0)
+{
+    printf("File rename failed\n");
+    return e_failure;
+}
     return e_success;
 }
